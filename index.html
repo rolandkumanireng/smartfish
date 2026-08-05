@@ -1,87 +1,105 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informasi Keramba Nila</title>
-    <style>
-        /* CSS Murni agar ringan di HP jadul, menggunakan font bawaan sistem */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #e0f7fa;
-            color: #333;
-            line-height: 1.6;
-            margin: 0;
-            padding: 15px;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #0277bd;
-            font-size: 1.5em;
-            text-align: center;
-        }
-        h2 {
-            color: #0288d1;
-            font-size: 1.2em;
-            border-bottom: 2px solid #b3e5fc;
-            padding-bottom: 5px;
-            margin-top: 25px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        .alert {
-            background-color: #fff3cd;
-            color: #856404;
-            padding: 15px;
-            border-radius: 5px;
-            border-left: 5px solid #ffeeba;
-            margin-top: 20px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-    </style>
+
+    <!-- Import Font Aesthetic: Poppins dari Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Menghubungkan CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
+    <div class="container">
 
+        <!-- BAGIAN ATAS: Layout 2 Kolom (Teks Kiri, Gambar Kanan) -->
+        <div class="hero-section">
 
-    <h2>🌟 Bintang Utama: Si Nila (Tilapia)</h2>
-    <ul>
-        <li><strong>Status:</strong> Masih bibit (sedang rakus-rakusnya makan!).</li>
-        <li><strong>Daya Tahan:</strong> Perenang tangguh dengan imun tubuh yang sangat kuat.</li>
-        <li><strong>Menu Makanan:</strong> Pelet berprotein tinggi dengan jadwal khusus.</li>
-    </ul>
+            <!-- Kolom Kiri: Teks -->
+            <div class="hero-text">
+                <h1>SMARTFISH</h1>
 
-    <h2>📅 Perjalanan Tumbuh Kembang</h2>
-    <ul>
-        <li><strong>Tanggal Masuk Keramba:</strong> Agustus 2026</li>
-        <li><strong>Estimasi Panen:</strong> November - Desember 2026</li>
-    </ul>
+                <p>Selamat datang di rumah bagi bibit perenang tangguh. Keramba jaring berukuran 2x3 meter ini
+                    menggunakan sistem sirkulasi air alami yang memastikan ikan nila (Tilapia) bebas stres dan tetap
+                    sehat. Dilengkapi dengan asupan pelet berprotein tinggi dan daya tahan imun super kuat, bibit-bibit
+                    ini siap tumbuh maksimal.</p>
 
-    <div class="alert">
-        <strong>⚠️ Aturan Bertamu:</strong>
-        <ol>
-            <li>Boleh difoto dan dilihat-lihat.</li>
-            <li><strong>Mohon JANGAN diberi makan sembarangan!</strong> Pencernaan bibit masih sensitif.</li>
-            <li>Bantu doakan agar panen melimpah! 🤲</li>
-        </ol>
+                <p>Mulai masuk pada Agustus 2026, kami menargetkan panen melimpah pada bulan November hingga Desember
+                    2026. Mohon doanya, dan ingat: boleh difoto, tapi <strong>jangan diberi makan sembarangan!</strong>
+                </p>
+            </div>
+
+            <!-- Kolom Kanan: Gambar Utama (Logo/Foto Kolam Besar) -->
+            <div class="hero-image">
+                <!-- Ganti dengan logo atau foto kolam utamamu -->
+                <img src="images/kolam.jpg" alt="Logo Keramba" class="main-image">
+            </div>
+
+        </div>
+
+        <div class="hero-section">
+
+            <!-- Kolom Kiri: Teks -->
+            <div class="hero-image">
+                <img src="images/nila.png" alt="ikan nila" class="main-image">
+            </div>
+
+            <!-- Kolom Kanan: Gambar Utama (Logo/Foto Kolam Besar) -->
+            <div class="hero-text">
+                <h1>NILA</h1>
+                <p>Selamat datang di rumah bagi bibit perenang tangguh. Keramba jaring berukuran 2x3 meter ini
+                    menggunakan sistem sirkulasi air alami yang memastikan ikan nila (Tilapia) bebas stres dan tetap
+                    sehat. Dilengkapi dengan asupan pelet berprotein tinggi dan daya tahan imun super kuat, bibit-bibit
+                    ini siap tumbuh maksimal.</p>
+
+                <p>Mulai masuk pada Agustus 2026, kami menargetkan panen melimpah pada bulan November hingga Desember
+                    2026. Mohon doanya, dan ingat: boleh difoto, tapi <strong>jangan diberi makan sembarangan!</strong>
+                </p>
+            </div>
+
+        </div>
+        
+        <div class="hero-text" position="">
+                <h1>DOKUMENTASI</h1>
+
+            </div>
+
+        <!-- BAGIAN BAWAH: Galeri Dokumentasi (Grid 3 Kolom) -->
+        <div class="gallery-section">
+            
+            <!-- Item Galeri -->
+            <div class="gallery-item">
+                <img src="images/foto1.jpg" alt="Dokumentasi 1">
+            </div>
+            <div class="gallery-item">
+                <img src="images/foto2.jpg" alt="Dokumentasi 2">
+            </div>
+            <div class="gallery-item">
+                <img src="images/foto3.jpg" alt="Dokumentasi 3">
+            </div>
+            <div class="gallery-item">
+                <img src="images/foto4.jpg" alt="Dokumentasi 4">
+            </div>
+            <div class="gallery-item">
+                <img src="images/foto5.jpg" alt="Dokumentasi 5">
+            </div>
+            <div class="gallery-item">
+                <img src="images/foto6.jpg" alt="Dokumentasi 6">
+            </div>
+        </div>
+
     </div>
-</div>
+
+
 
 </body>
+
 </html>
