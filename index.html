@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="SMARTFISH - Informasi Budidaya Keramba Ikan Nila Modern. Dari Kolam Terbengkalai Menjadi Sumber Pangan dan Harapan.">
+    <meta name="theme-color" content="#0A1128">
+    <title>SMARTFISH • Informasi Budidaya Keramba Nila</title>
+
+    <!-- Google Fonts: Plus Jakarta Sans & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Indikator Progres Scroll (Animasi Halus di Atas) -->
+    <div id="scrollProgressBar" class="scroll-progress-bar"></div>
+
+    <!-- ================= 1. HEADER & NAVBAR ================= -->
+    <header id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#beranda" class="nav-logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6.5 12c.94-3.46 4.94-6 8.5-6 3.56 0 6.06 2.54 7 6-.94 3.46-3.44 6-7 6s-7.56-2.54-8.5-6Z"/>
+                        <path d="M18 12v.5"/>
+                        <path d="M16 17.93a10.07 10.07 0 0 1-4 0"/>
+                        <path d="M2 12c.5 1.5 2 3 4 3 0-2 0-4 0-6-2 0-3.5 1.5-4 3Z"/>
+                    </svg>
+                </span>
+                <span class="logo-text">SMARTFISH</span>
+                <span class="status-dot" title="Sistem Aktif"></span>
+            </a>
+
+            <!-- Menu Desktop -->
+            <nav class="nav-links">
+                <a href="#beranda" class="nav-link active">Beranda</a>
+                <a href="#keunggulan" class="nav-link">Keunggulan</a>
+                <a href="#nila" class="nav-link">Ikan Nila</a>
+                <a href="#siklus" class="nav-link">Siklus Panen</a>
+                <a href="#tata-tertib" class="nav-link">Tata Tertib</a>
+                <a href="#dokumentasi" class="nav-link">Dokumentasi</a>
+            </nav>
+
+            <div class="nav-action">
+                <!-- Hamburger Button untuk Layar HP -->
+                <button id="mobileMenuBtn" class="hamburger-btn" aria-label="Buka Menu Navigasi">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Menu (Menu Geser Khusus HP) -->
+    <div id="mobileDrawer" class="mobile-drawer">
+        <div class="drawer-backdrop" id="drawerBackdrop"></div>
+        <div class="drawer-content">
+            <div class="drawer-header">
+                <div class="drawer-logo">
+                    <span class="logo-text">SMARTFISH</span>
+                </div>
+                <button id="closeDrawerBtn" class="close-btn" aria-label="Tutup Menu">&times;</button>
+            </div>
+            <nav class="drawer-links">
+                <a href="#beranda" class="drawer-link"><span class="drawer-icon">🏠</span> Beranda</a>
+                <a href="#keunggulan" class="drawer-link"><span class="drawer-icon">✨</span> Keunggulan Keramba</a>
+                <a href="#nila" class="drawer-link"><span class="drawer-icon">🐟</span> Profil Ikan Nila</a>
+                <a href="#siklus" class="drawer-link"><span class="drawer-icon">📅</span> Jadwal Siklus Panen</a>
+                <a href="#tata-tertib" class="drawer-link"><span class="drawer-icon">🛡️</span> Tata Tertib Kunjungan</a>
+                <a href="#dokumentasi" class="drawer-link"><span class="drawer-icon">📸</span> Dokumentasi Foto</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ================= 2. HERO SECTION UTAMA ================= -->
+    <section class="hero-full-section" id="beranda">
+        <!-- Source Gambar Sesuai Kode Asli -->
+        <img src="images/kolam.jpeg" alt="Foto Keramba" class="hero-full-img">
+        
+        <div class="hero-overlay"></div>
+
+        <div class="hero-full-content">
+            <div class="hero-badge animate-in">
+                <span class="badge-pulse"></span>
+                <span>Budidaya Aktif • Target Panen Akhir 2026</span>
+            </div>
+
+            <h1 class="hero-title animate-in delay-1">
+                SMART<span class="gradient-text">FISH</span>
+            </h1>
+
+            <p class="hero-tagline animate-in delay-2">
+                Dari Kolam Terbengkalai Menjadi Sumber Pangan dan Harapan
+            </p>
+
+            <p class="hero-subtext animate-in delay-3">
+                Inisiatif revitalisasi perairan dengan sistem keramba jaring apung sirkulasi alami, menghidupkan kembali ekosistem produktif penghasil ikan nila berkualitas tinggi, higienis, dan sehat.
+            </p>
+
+            <div class="hero-buttons animate-in delay-4">
+                <a href="#nila" class="btn btn-primary btn-glow">
+                    <span>Jelajahi Keramba</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#siklus" class="btn btn-secondary">
+                    <span>Lihat Jadwal Panen</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Indikator Scroll ke Bawah -->
+        <a href="#keunggulan" class="scroll-down-indicator" aria-label="Gulir ke Bawah">
+            <span class="mouse-icon"><span class="wheel"></span></span>
+            <span class="scroll-text">Gulir ke Bawah</span>
+        </a>
+    </section>
+
+    <!-- ================= 3. STATISTIK RINGKAS (KEY METRICS) ================= -->
+    <div class="metrics-wrapper">
+        <div class="container">
+            <div class="metrics-grid">
+                <div class="metric-card reveal">
+                    
+                    <div class="metric-value">2 × 3 <span class="metric-unit">Meter</span></div>
+                    <div class="metric-label">Dimensi Keramba Jaring</div>
+                    <div class="metric-desc">Kapasitas ruang optimal untuk renang bebas bibit</div>
+                </div>
+
+                <div class="metric-card reveal delay-1">
+                    
+                    <div class="metric-value">100% <span class="metric-unit">Alami</span></div>
+                    <div class="metric-label">Sirkulasi Air Eco-Flow</div>
+                    <div class="metric-desc">Oksigen terlarut tinggi tanpa resiko stres pada ikan</div>
+                </div>
+
+                <div class="metric-card reveal delay-2">
+                    
+                    <div class="metric-value">32 - 35%</div>
+                    <div class="metric-label">Protein Pelet Unggul</div>
+                    <div class="metric-desc">Nutrisi presisi untuk imunitas dan pembentukan daging</div>
+                </div>
+
+                <div class="metric-card reveal delay-3">
+                    
+                    <div class="metric-value">4 <span class="metric-unit">Bulan</span></div>
+                    <div class="metric-label">Siklus Pembesaran</div>
+                    <div class="metric-desc">Mulai Agustus 2026 menuju panen Nov - Des 2026</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container Utama untuk Bagian Konten -->
+    <main class="container">
+
+        <!-- ================= 4. KEUNGGULAN SISTEM BUDIDAYA ================= -->
+        <section class="section-block" id="keunggulan">
+            <div class="section-header text-center reveal">
+                <span class="section-pill">Sistem Budidaya Modern</span>
+                <h2 class="section-title">Keunggulan Keramba SMARTFISH</h2>
+                <p class="section-subtitle">
+                    Kombinasi pengelolaan ramah lingkungan dan teknologi pemeliharaan intensif untuk menghasilkan ikan nila bermutu prima.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrapper blue">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                        </svg>
+                    </div>
+                    <h3>Sirkulasi Air Alami Bebas Stres</h3>
+                    <p>Memanfaatkan debit air alami yang terus berganti secara kontinu. Air yang bergerak menjaga kejernihan dan kandungan oksigen terlarut tetap prima sehingga ikan aktif bergerak dan bebas stres.</p>
+                </div>
+
+                <div class="feature-card reveal delay-1">
+                    <div class="feature-icon-wrapper green">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3>Manajemen Pakan Protein Tinggi</h3>
+                    <p>Diberikan asupan pelet khusus dengan kandungan protein terstandar 32-35%. Jadwal pemberian makan disiplin menjamin efisiensi konversi pakan (FCR) maksimal dan pertumbuhan seragam.</p>
+                </div>
+
+                <div class="feature-card reveal delay-2">
+                    <div class="feature-icon-wrapper purple">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>Biosecurity & Imunitas Kuat</h3>
+                    <p>Sanitasi jaring dan kolam terkontrol berkala mencegah penumpukan amonia dan risiko hama parasit. Ikan tumbuh higienis tanpa menggunakan obat-obatan kimia berbahaya.</p>
+                </div>
+
+                <div class="feature-card reveal delay-3">
+                    <div class="feature-icon-wrapper amber">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>Revitalisasi Kolam Terbengkalai</h3>
+                    <p>Inisiatif nyata memberdayakan sumber daya air yang tadinya tidak terurus menjadi lahan produktif bernilai ekonomi dan memperkuat ketahanan pangan warga sekitar.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 5. HERO SECTION 2: IKAN NILA ================= -->
+        <section class="hero-section" id="nila">
+            <!-- Gambar di Kiri Sesuai Kode Asli -->
+            <div class="hero-image reveal">
+                <div class="image-showcase-box">
+                    <img src="images/nila.png" alt="Ikan Nila" class="main-image">
+                    <div class="image-glow"></div>
+                    
+                    <!-- Floating Badge Interaktif -->
+                    <div class="floating-pill pill-top">
+                        <span class="pill-dot green"></span>
+                        <span>Strain Unggul Tangguh</span>
+                    </div>
+                    <div class="floating-pill pill-bottom">
+                        <span class="pill-dot blue"></span>
+                        <span>Daging Padat & Bebas Bau Lumpur</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Teks Penjelasan di Kanan -->
+            <div class="hero-text reveal delay-1">
+                <span class="section-pill">Spesies Pilihan</span>
+                <h2 class="nila-title">NILA</h2>
+                
+                <p class="lead-text">
+                    Selamat datang di rumah bagi bibit perenang tangguh. Keramba jaring berukuran <strong>2x3 meter</strong> ini menggunakan sistem sirkulasi air alami yang memastikan ikan nila (Tilapia) bebas stres dan tetap sehat. Dilengkapi dengan asupan pelet berprotein tinggi dan daya tahan imun super kuat, bibit-bibit ini siap tumbuh maksimal.
+                </p>
+                
+                <p>
+                    Mulai masuk pada <strong>Agustus 2026</strong>, kami menargetkan panen melimpah pada bulan <strong>November hingga Desember 2026</strong>. Mohon doanya, dan ingat: boleh difoto, tapi <strong>jangan diberi makan sembarangan!</strong>
+                </p>
+
+                <!-- Mini Spesifikasi Ringkas -->
+                <div class="spec-chips">
+                    <div class="chip">
+                        <span class="chip-label">Suhu Ideal:</span>
+                        <span class="chip-val">27°C - 30°C</span>
+                    </div>
+                    <div class="chip">
+                        <span class="chip-label">pH Air:</span>
+                        <span class="chip-val">6.8 - 7.8</span>
+                    </div>
+                    <div class="chip">
+                        <span class="chip-label">Target Bobot:</span>
+                        <span class="chip-val">300 - 450 gr/ekor</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 6. ROADMAP SIKLUS PERTUMBUHAN ================= -->
+        <section class="section-block" id="siklus">
+            <div class="section-header text-center reveal">
+                <span class="section-pill">Jadwal & Target</span>
+                <h2 class="section-title">Roadmap Siklus Budidaya 2026</h2>
+                <p class="section-subtitle">
+                    Perjalanan 4 bulan dari penebaran bibit unggul hingga masa panen raya yang melimpah.
+                </p>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+
+                <!-- Step 1 -->
+                <div class="timeline-card reveal">
+                    <div class="timeline-badge">1</div>
+                    <div class="timeline-time">Agustus 2026</div>
+                    <h3 class="timeline-title">Penebaran Bibit Awal</h3>
+                    <p>Bibit ikan nila pilihan ukuran 5-7 cm ditebar ke dalam keramba jaring. Aklimatisasi air dilakukan untuk mencegah bibit kaget suhu.</p>
+                    <span class="status-tag tag-done">Selesai Ditebar</span>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-card reveal delay-1 active-step">
+                    <div class="timeline-badge">2</div>
+                    <div class="timeline-time">September - Oktober 2026</div>
+                    <h3 class="timeline-title">Fase Pertumbuhan & Grading</h3>
+                    <p>Pemberian pakan pelet protein 35% secara disiplin. Pemilahan ukuran (grading) untuk memastikan pertumbuhan merata.</p>
+                    <span class="status-tag tag-progress">Sedang Berlangsung</span>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-card reveal delay-2">
+                    <div class="timeline-badge">3</div>
+                    <div class="timeline-time">November 2026</div>
+                    <h3 class="timeline-title">Finishing & Pra-Panen</h3>
+                    <p>Pengecekan bobot rata-rata ikan (sampling) dan pembilasan air segar agar daging padat, bersih, dan bebas aroma lumpur.</p>
+                    <span class="status-tag tag-upcoming">Mendatang</span>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-card reveal delay-3">
+                    <div class="timeline-badge">4</div>
+                    <div class="timeline-time">Desember 2026</div>
+                    <h3 class="timeline-title">Panen Raya</h3>
+                    <p>Pemanenan serentak hasil budidaya berbobot 300-400 gram per ekor, siap dinikmati dengan mutu daging segar dan higienis.</p>
+                    <span class="status-tag tag-target">Target Panen</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 7. TATA TERTIB PENGUNJUNG ================= -->
+        <section class="section-block" id="tata-tertib">
+            <div class="section-header text-center reveal">
+                <span class="section-pill">Panduan Berkunjung</span>
+                <h2 class="section-title">Tata Tertib Area Keramba</h2>
+                <p class="section-subtitle">
+                    Mari bersama-sama menjaga kenyamanan lingkungan dan kesehatan ikan nila kesayangan kita.
+                </p>
+            </div>
+
+            <div class="rules-grid">
+                <div class="rule-card rule-allowed reveal">
+                    <div class="rule-header">
+                       
+                        <h3>Bebas Berfoto & Dokumentasi</h3>
+                    </div>
+                    <p>Pengunjung sangat diperbolehkan mengambil foto, video, ataupun membuat konten kreatif di sekitar area kolam dengan tetap berhati-hati.</p>
+                    <div class="rule-tag tag-allowed">Boleh Difoto</div>
+                </div>
+
+                <div class="rule-card rule-prohibited reveal delay-1">
+                    <div class="rule-header">
+                        
+                        <h3>Jangan Diberi Makan Sembarangan!</h3>
+                    </div>
+                    <p>Makanan sisa, roti, snack, atau benda asing dapat meracuni ikan dan memicu amonia tinggi yang berakibat fatal pada keramba.</p>
+                    <div class="rule-tag tag-prohibited">Sangat Dilarang</div>
+                </div>
+
+                <div class="rule-card rule-allowed reveal delay-2">
+                    <div class="rule-header">
+                        
+                        <h3>Jaga Kebersihan Lingkungan</h3>
+                    </div>
+                    <p>Selalu buang sampah pada tempat sampah yang telah disediakan dan jaga kelestarian area sekitar kolam.</p>
+                    <div class="rule-tag tag-allowed">Wajib Dipatuhi</div>
+                </div>
+
+                <div class="rule-card rule-prohibited reveal delay-3">
+                    <div class="rule-header">
+                        
+                        <h3>Hindari Mengguncang Keramba</h3>
+                    </div>
+                    <p>Jangan menghentakkan kaki atau mengguncang jaring apung agar ikan tetap tenang, tidak panik, dan terbebas dari stres.</p>
+                    <div class="rule-tag tag-prohibited">Perlu Diperhatikan</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 8. GALERI DOKUMENTASI ================= -->
+        <section class="section-block" id="dokumentasi">
+            <div class="section-header text-center reveal">
+                <span class="section-pill">Dokumentasi</span>
+                <h2 class="section-title">DOKUMENTASI</h2>
+                <p class="section-subtitle">
+                    Galeri rekaman visual keramba budidaya ikan nila SMARTFISH.
+                </p>
+            </div>
+
+            <!-- Petunjuk Swipe untuk Pengguna HP -->
+            <div class="mobile-swipe-hint">
+                <span class="swipe-hand">👈👉</span>
+                <span>Geser ke samping untuk melihat foto lainnya</span>
+            </div>
+
+            <!-- Bagian Galeri (Source Gambar Sesuai Kode Asli Pengguna) -->
+            <div class="gallery-section" id="galleryContainer">
+                <div class="gallery-item" data-caption="Dokumentasi 1">
+                    <img src="images/foto1.jpeg" alt="Dokumentasi 1">
+                    <div class="gallery-overlay">
+                        
+                        <p>Dokumentasi 1</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-caption="Dokumentasi 2">
+                    <img src="images/foto2.jpeg" alt="Dokumentasi 2">
+                    <div class="gallery-overlay">
+                        
+                        <p>Dokumentasi 2</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-caption="Dokumentasi 3">
+                    <img src="images/foto3.jpeg" alt="Dokumentasi 3">
+                    <div class="gallery-overlay">
+                        
+                        <p>Dokumentasi 3</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-caption="Dokumentasi 4">
+                    <img src="images/foto4.jpeg" alt="Dokumentasi 4">
+                    <div class="gallery-overlay">
+                        
+                        <p>Dokumentasi 4</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-caption="Dokumentasi 5">
+                    <img src="images/foto5.jpg" alt="Dokumentasi 5">
+                    <div class="gallery-overlay">
+                        
+                        <p>Dokumentasi 5</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-caption="Dokumentasi 6">
+                    <img src="images/foto6.jpeg" alt="Dokumentasi 6">
+                    <div class="gallery-overlay">
+                        
+                        <p>Dokumentasi 6</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Indikator Titik (Dots) Navigasi untuk HP -->
+            <div class="carousel-dots" id="galleryDots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= 9. FOOTER (SESUAI KODE ASLI PENGGUNA) ================= -->
+    <footer class="footer-section">
+        <div class="footer-bottom">
+            <p>&copy; KKN 116 UNIVERSITAS HASANUDDIN DESA BINA BARU KECAMATAN KULO KABUPATEN SIDENDENG RAPPANG. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ================= 10. BOTTOM NAVIGATION BAR (KHUSUS TAMPILAN HP) ================= -->
+    <!-- Navigasi cepat ala aplikasi mobile yang sangat ergonomis di HP -->
+    <nav class="mobile-bottom-bar" id="mobileBottomBar">
+        <a href="#beranda" class="bottom-tab active" data-target="beranda">
+            <span class="bottom-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                    <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+            </span>
+            <span class="bottom-label">Beranda</span>
+        </a>
+
+        <a href="#nila" class="bottom-tab" data-target="nila">
+            <span class="bottom-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6.5 12c.94-3.46 4.94-6 8.5-6 3.56 0 6.06 2.54 7 6-.94 3.46-3.44 6-7 6s-7.56-2.54-8.5-6Z"/>
+                    <path d="M18 12v.5"/>
+                    <path d="M2 12c.5 1.5 2 3 4 3 0-2 0-4 0-6-2 0-3.5 1.5-4 3Z"/>
+                </svg>
+            </span>
+            <span class="bottom-label">Nila</span>
+        </a>
+
+        <a href="#siklus" class="bottom-tab" data-target="siklus">
+            <span class="bottom-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6"/>
+                    <line x1="8" y1="2" x2="8" y2="6"/>
+                    <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+            </span>
+            <span class="bottom-label">Panen</span>
+        </a>
+
+        <a href="#dokumentasi" class="bottom-tab" data-target="dokumentasi">
+            <span class="bottom-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                    <polyline points="21 15 16 10 5 21"/>
+                </svg>
+            </span>
+            <span class="bottom-label">Galeri</span>
+        </a>
+    </nav>
+
+    <!-- ================= 11. LIGHTBOX MODAL (PREVIEW FOTO) ================= -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <div class="lightbox-backdrop"></div>
+        <div class="lightbox-container">
+            <button id="closeLightboxBtn" class="lightbox-close" aria-label="Tutup Pratinjau Foto">&times;</button>
+            <img id="lightboxImg" src="" alt="Pratinjau Foto Dokumentasi" class="lightbox-image">
+            <p id="lightboxCaption" class="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
